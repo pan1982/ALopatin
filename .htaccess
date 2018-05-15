@@ -1,0 +1,17 @@
+AddDefaultCharset UTF-8
+DirectoryIndex index.php
+#ErrorDocument 401 http://localhost/
+#ErrorDocument 403 http://localhost/
+#ErrorDocument 404 http://localhost/
+#ErrorDocument 500 http://localhost/
+#AddType application/x-httpd-php .php .html .css
+
+#ниже склейка с www и без
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.ants1.in.ua/aksl$ [NC]
+RewriteRule ^(.*)$ http://ants1.in.ua/aksl/$1 [R=301,L]
+
+#ниже склейка со слешем на конце и без
+#RewriteCond %{HTTP_HOST} (.*)
+#RewriteCond %{REQUEST_URI} /$ [NC]
+#RewriteRule ^(.*)(/)$ $1 [L,R=301]

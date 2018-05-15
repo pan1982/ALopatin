@@ -1,0 +1,290 @@
+#body1
+{
+  /*background: url("pict/osanka.jpg") no-repeat;*/
+/*  background-attachment: fixed;
+  background-size: 100%;
+*/
+  /*background: url("pict/osanka.jpg") repeat-y RGB(246, 255 , 250);*/
+}
+
+
+/* заголовок сайта */
+#high_div
+{
+  height:24px;/*148*/
+  background: RGB(255,255,128);
+}
+
+#zagl_div_id
+{
+  width:600px;
+  /*height:20px;*/
+  position:relative;
+  top:-20px;/*148*/
+  left: 40px;/*220*/
+  color: RGB(0,0,160);
+  font-size: 90%;
+  font-weight: 600;
+}
+
+/*#pict_zagl
+{
+  position:relative;
+  left: 140px;
+}*/
+
+
+/*  стили текстовых блоков*/
+/*  ------------------*/
+/*  ------------------*/
+/*  ------------------*/
+
+
+.txt_norm  /*вывод текста с пробелами и переносами строк*/
+{
+  white-space: pre-wrap; 
+}
+
+
+/*  стили левой панели*/
+/*  ------------------*/
+/*  ------------------*/
+/*  ------------------*/
+
+#l_punel_ul
+{
+  position:fixed; /*ПРИ ЭТОМ ПОКАЗАТЕЛЕ ИСПОЛЬЗОВАЛ СДВИГ ТЕКСТОВОГО БЛОКА*/
+  width:165px;
+  float:left;
+}
+
+
+.menu_p
+{
+  cursor: pointer;/* меняет вид курсора*/
+  list-style-type: none;/* убераем станартрые типа маркеров*/
+  background: RGB(255, 253, 219);/* фон пункта меню*/
+  border:1px solid blue;/* рамка вокруг пункта меню*/
+  color:blue;/* цвет текста*/
+  margin:3px;/* отступы что-бы кнопки друг на друга не налазили*/
+  margin-left:-40px;/*отступ что-бы меню было вправо прижато*/
+  padding:3px;/*поля вокруг надписи что-бы копка была шире*/
+}
+
+.menu_p::before
+{
+  content: '\25BA';
+  padding-right: 5px;
+  color: RGB(76, 170, 76);
+}
+
+.menu_p:hover
+{
+  background: RGB(235, 233, 159);/* фон пункта меню*/
+}
+
+#li_1 /*окно краткого описания*/
+{
+  height:150px;/*148*/
+  /*background: RGB(255,255,128);*/
+  list-style-type: none;/* убераем станартрые типа маркеров*/
+  border:1px solid blue;/* рамка вокруг пункта меню*/
+  margin-left:-40px;/*отступ что-бы меню было вправо прижато*/
+  font-size:0.8em;
+  margin-bottom: 4px;
+}
+
+#li_2 /*окно списка объектов*/
+{
+  height:330px;/*148*/
+  /*background: RGB(255,255,128);*/
+  list-style-type: none;/* убераем станартрые типа маркеров*/
+  border:1px solid blue;/* рамка вокруг пункта меню*/
+  margin-left:-40px;/*отступ что-бы меню было вправо прижато*/
+  font-size:0.8em;
+}
+
+
+/*список объектов*/
+/**/
+/**/
+
+.list_a_cl
+{
+  text-decoration: none;
+  color: RGB(0,0,0);
+}
+
+.list_li_cl /*общий класс для списка объектов */
+{
+  list-style-type: none;/* убераем станартрые типа маркеров*/
+  margin-left:-40px; /*отступ что-бы меню было вправо прижато*/
+
+}
+
+.list_dir_li_cl::before /*объект - папка*/
+{
+  content: url("pict/ico_folder.jpg"); /*'\25A0';*/
+  padding-right: 2px;
+  color: RGB(76, 170, 76);
+}
+
+
+.list_fath_dir_li_cl/*объект - папка Родителя*/
+{
+  /*background: RGB(255, 255, 159);*/
+  /*background: RGB(193, 197, 162);*/
+}
+
+.list_fath_dir_li_cl::before /*объект - папка Родителя*/
+{
+  content: url("pict/ico_folder_open.jpg"); /*'\25A0';*/
+  padding-right: 2px;
+  color: RGB(76, 170, 76);
+  /*background: RGB(193, 197, 162);*/
+}
+
+.list_pic_li_cl::before /*объект - картинка*/
+{
+  content: url("pict/ico_pict.jpg"); /*'\25A0';*/
+  padding-right: 2px;
+  color: RGB(76, 170, 76);
+}
+
+.list_txt_li_cl::before /*объект - картинка*/
+{
+  content: url("pict/ico_txt.jpg"); /*'\25A0';*/
+  padding-right: 2px;
+  color: RGB(76, 170, 76);
+}
+
+.list_li_cl:hover /*общий класс для списка объектов */
+{
+  background: RGB(235, 233, 159);  /*фон пункта меню*/
+  cursor: pointer;
+}
+
+.list_li_cl_pos_curs
+{
+  background: RGB(176, 174, 119);  /*фон пункта меню*/
+}
+
+#list_root_li /*объект - корень*/
+{
+  font-weight: 600;
+}
+
+#list_root_li::before /*объект - корень*/
+{
+  content: url("pict/ico_home.jpg"); /*'\25A0';*/
+  padding-right: 2px;
+  color: RGB(76, 170, 76);
+}
+
+
+/*стили авторизации в меню */
+/*-----------------
+-----------------
+-----------------*/
+
+#autoriz_li_id 
+{
+  list-style-type: none;
+  margin-left:-40px;
+}
+
+.autoriz_in_cl
+{
+  margin-top: 3px; 
+}
+
+.autoriz_subm_cl
+{
+  position:relative;
+  margin-top: 3px; 
+  text-align: center;
+  width:184px;
+}
+
+
+
+/*стили главного ознакомительного текста главной страницы */
+/*-----------------
+-----------------
+-----------------*/
+
+
+.WhiteFone
+{
+  background: RGB(255, 255, 255);  
+}
+
+#maine_window_info_div /*главное окно для вывода инфо*/
+{
+  width:1000px;
+  height:600px;
+  position:relative;
+  left: 210px; /*СДВИГ ДЛЯ ТОГО ЧТО-БЫ НЕ НАЛАЗИЛО НА МЕНЮ*/
+  top:15px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/*стиль основного изображения*/
+#img_maine_id
+{
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img_center_cl_100 /*класс центрования картинки*/
+{
+  position: relative;
+  left: 100px;
+  /*transform: translate(-50%,);*/
+}
+
+.img_center_cl_200 /*класс центрования картинки*/
+{
+  position: relative;
+  left: 200px;
+  /*transform: translate(-50%,);*/
+}
+
+.img_center_cl_300 /*класс центрования картинки*/
+{
+  position: relative;
+  left: 300px;
+  /*transform: translate(-50%,);*/
+}
+
+.img_center_cl_400 /*класс центрования картинки*/
+{
+  position: relative;
+  left: 400px;
+  /*transform: translate(-50%,);*/
+}
+
+#m_txt_sp
+{
+  white-space: pre-wrap;
+}
+
+
+#txt_php /*стили текстового поля служебных сообщений*/
+{
+  width:850px;
+  position:relative;
+
+  left: 210px; /*СДВИГ ДЛЯ ТОГО ЧТО-БЫ НЕ НАЛАЗИЛО НА МЕНЮ*/
+  top:15px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+
