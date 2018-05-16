@@ -78,7 +78,7 @@
 			/*$dir_now = $this->get_dir();*/
 			/*echo "./data/".$dir_now;*/
 			$levels=1;
-			$this->make_father_dir($dir_now,$levels,$open_obj);	// созданине папок родителей		
+			$this->make_father_dir($dir_now,&$levels,$open_obj);	// созданине папок родителей		
 			/*$label=$levels*-40;*/
 			/*echo $levels;*/
 

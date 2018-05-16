@@ -45,7 +45,7 @@
 		<p id="txt_php"></p> 
 		
 		<?php
-			require_once 'gl_head_maine.php'; /*формирование шапки сайта (лого, контакты, заголовок)*/
+			require_once 'gl_head_maine.php'; /*формирование шапки сайта (лого, контакты, заголовок), формирование параметров ГЕТ*/
 			require_once 'gl_left_punel.php'; /*формирование левой панели сайта*/
 			require_once 'gl_edit_txt.php'; /*модальный блок на странице для редактирования текста*/
 			require_once 'gl_maine_window_info_div.php'; /*основное окно для вывода информации*/
