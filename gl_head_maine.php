@@ -1,18 +1,6 @@
 <!-- общий заголовок страниц -->
 
 <div id="high_div">
- 	<span id="obj_get_id" class="hidden">
- 		<?php
- 			echo get_op_obj();
- 		?>
-	</span>
-
- 	<span id="dir_get_id" class="hidden">
- 		<?php
- 			echo get_dir();
- 		?>
-	</span>
-
   	<script>
     	$("#high_div").css("width", String(document.body.clientWidth-20)+"px");
   	</script>

@@ -10,23 +10,16 @@ function change_txt_sp_n(ID_elem)//новая функция открытия о
 	var x = document.getElementById("sp_1").textContent;
 	document.getElementById("txt_block_description").value= x.trim();
 
-	id_tek_obj=document.getElementById("obj_get_id").textContent.trim();
-	if ((id_tek_obj=='')||(id_tek_obj=='list_root_li'))
-	{
-		alert("Для корневого объекта свойств нету !!!");
-	}
-	else
-	{
-		document.getElementById("id_txt_block").innerHTML=id_tek_obj;
-		SetData_form_id();
-		document.location.href = "#BlockTxt_in";
-
-	}
-
-	/*	var elem_menu_ul=document.getElementById("list_ob_ul");
+	var elem_menu_ul=document.getElementById("list_ob_ul");
 	var elem_menu_li=elem_menu_ul.getElementsByTagName('li');
 	for (var i = 0; i < elem_menu_li.length; i++) 
 	{
+		//document.getElementById("id_txt_block").innerHTML+=elem_menu_li[i].id;	
+/*		alert($('#'+elem_menu_li[i].id).id);
+		alert(elem_menu_li[i].id);
+*/
+		//alert(document.getElementById(elem_menu_li[i].id).innerHTML);
+
 		if ($('#'+elem_menu_li[i].id).hasClass("list_li_cl_pos_curs"))
 		{
 			if (document.getElementById("id_txt_block").innerHTML=='list_root_li') 
@@ -41,7 +34,7 @@ function change_txt_sp_n(ID_elem)//новая функция открытия о
 				break;
 			}			
 		}
-	}*/
+	}
 }
 
 function SetData_form_id()
